@@ -1,0 +1,36 @@
+[submodule "population"]
+	path = population
+	url = https://github.com/NRGI-data/population
+[submodule "gdp"]
+	path = gdp
+	url = https://github.com/NRGI-data/gdp
+[submodule "cpi"]
+	path = cpi
+	url = https://github.com/NRGI-data/cpi
+[submodule "country-codes"]
+	path = country-codes
+	url = https://github.com/NRGI-data/country-codes
+[submodule "cofog"]
+	path = cofog
+	url = https://github.com/NRGI-data/cofog
+[submodule "gold-prices"]
+	path = gold-prices
+	url = https://github.com/NRGI-data/gold-prices
+[submodule "language-codes"]
+	path = language-codes
+	url = https://github.com/NRGI-data/language-codes
+[submodule "unece-package-codes"]
+	path = unece-package-codes
+	url = https://github.com/NRGI-data/unece-package-codes
+[submodule "ppp"]
+	path = ppp
+	url = https://github.com/NRGI-data/ppp
+[submodule "finance-vix"]
+	path = finance-vix
+	url = https://github.com/NRGI-data/finance-vix
+[submodule "corruption-perceptions-index"]
+	path = corruption-perceptions-index
+	url = https://github.com/NRGI-data/corruption-perceptions-index
+[submodule "imf-weo"]
+	path = imf-weo
+	url = https://github.com/NRGI-data/imf-weo
