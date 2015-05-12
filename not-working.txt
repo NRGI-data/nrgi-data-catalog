@@ -1,0 +1,7 @@
+cofog
+corruptionp-perception-index
+country-codes
+cpi
+gdp
+population
+ppp
