@@ -1,0 +1,181 @@
+{
+  "name": "eiti",
+  "title": "",
+  "homepage": "",
+  "version": "0.1.0",
+  "license": "PDDL-1.0",
+  "resources": [
+    {
+      "name": "eiti_total",
+      "path": "data/eiti_total.csv",
+      "format": "csv",
+      "mediatype": "text/csv",
+      "bytes": 406784,
+      "schema": {
+        "fields": [
+          {
+            "name": "Report ID",
+            "type": "string",
+            "description": ""
+          },
+          {
+            "name": "Years Covered",
+            "type": "number",
+            "description": ""
+          },
+          {
+            "name": "Lookup",
+            "type": "string",
+            "description": ""
+          },
+          {
+            "name": "Region",
+            "type": "string",
+            "description": ""
+          },
+          {
+            "name": "Country Webpage",
+            "type": "string",
+            "description": ""
+          },
+          {
+            "name": "Sector",
+            "type": "string",
+            "description": ""
+          },
+          {
+            "name": "Total Production Value (US$)",
+            "type": "number",
+            "description": ""
+          },
+          {
+            "name": "Revenue Streams Covered",
+            "type": "string",
+            "description": ""
+          },
+          {
+            "name": "Includes In-kind Payments",
+            "type": "string",
+            "description": ""
+          },
+          {
+            "name": "Added to Payments by Author",
+            "type": "string",
+            "description": ""
+          },
+          {
+            "name": "Payments Received by Government from Covered Companies (US$)",
+            "type": "number",
+            "description": ""
+          },
+          {
+            "name": "Payments Made by Covered Companies (US$)",
+            "type": "number",
+            "description": ""
+          },
+          {
+            "name": "Proportion of Total Revenue/Production Covered (as indicated in EITI Report)",
+            "type": "number",
+            "description": ""
+          },
+          {
+            "name": "Total Government Extractives Revenue (US$)",
+            "type": "number",
+            "description": ""
+          },
+          {
+            "name": "Source for Total Government Extractives Revenues",
+            "type": "number",
+            "description": ""
+          },
+          {
+            "name": "Government's share",
+            "type": "number",
+            "description": ""
+          },
+          {
+            "name": "Currency",
+            "type": "string",
+            "description": ""
+          },
+          {
+            "name": "Exchange Rate Utilized, US$1:LC",
+            "type": "number",
+            "description": ""
+          },
+          {
+            "name": "Disaggregation",
+            "type": "string",
+            "description": ""
+          },
+          {
+            "name": "In-kind Payment Volumes",
+            "type": "number",
+            "description": ""
+          },
+          {
+            "name": "In-kind Payment Value (US$)",
+            "type": "number",
+            "description": ""
+          },
+          {
+            "name": "Nature of Subsidy",
+            "type": "number",
+            "description": ""
+          },
+          {
+            "name": "Amount of Subsidy (US$)",
+            "type": "number",
+            "description": ""
+          },
+          {
+            "name": "Number of Companies Requested to Report",
+            "type": "number",
+            "description": ""
+          },
+          {
+            "name": "Companies Requested to Report",
+            "type": "string",
+            "description": ""
+          },
+          {
+            "name": "Number of Reporting Companies",
+            "type": "number",
+            "description": ""
+          },
+          {
+            "name": "Publication Date",
+            "type": "string",
+            "description": ""
+          },
+          {
+            "name": "Updated Date",
+            "type": "number",
+            "description": ""
+          },
+          {
+            "name": "Name of the Reconciler",
+            "type": "string",
+            "description": ""
+          },
+          {
+            "name": "EITI Report",
+            "type": "string",
+            "description": ""
+          },
+          {
+            "name": "Page of the Report",
+            "type": "string",
+            "description": ""
+          },
+          {
+            "name": "Comments",
+            "type": "string",
+            "description": ""
+          }
+        ]
+      }
+    }
+  ],
+  "description": ""
+}
