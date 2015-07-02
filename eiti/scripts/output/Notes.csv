@@ -1,0 +1,40 @@
+Colour code for the source of reported information:,
+,Report itself and external sources of production information
+,"2011 NRGI dataset, summary on www.eiti.org and external sources of production information (with NRGI dataset used over www.eiti.org when information differs)¹"
+,Summary on www.eiti.org and external sources of production information
+,"Reports published in December 2014, without use of externl sources for production or price figures"
+¹ Reports for Equatorial Guinea and Gabon do not have a summary on www.eiti.org and therefore the only available information is from the NRGI dataset,
+,
+,
+Colour code for the figures taken from the report that differ from those on www.eiti.org:²̕ʹ³,
+,"Difference that is fully explained by inclusion of different information (e.g. additional revenue streams, payments in-kind)"
+,"Difference that is not explained by inclusion of different information, but is less than 1%"
+,"Difference that is not explained by inclusion of different information, and is greater than 1%"
+,Difference that requires further consideration
+² Comments given to explain the difference for one reporting entity are also appropriate for the other reporting entity unless stated otherwise.,
+³ Figures from the 2011 NRGI dataset are not assumed to include different information to that informing figures on www.eiti.org. ,
+,
+,
+Calculation of a country's value of production:,
+"Production values are from the EITI Report if available. If not, they are calculated based on the volumes and prices of commodities produced by the country. These commodities are either identified in the EITI Report or by USGS.",
+"Production volumes are from the EITI Report if data is available for all years. If not, to ensure consistency, country-specific volumes from external sources - BPSR 2014, EIA and USGS - are used for all years. ",
+"Prices are from the EITI Report if available for any year. If not, global prices from external sources - BPSR 2014, World Bank and USGS - are used (with the exception of diamond prices which are available by country if they participate in the Kimberley Process).",
+"Where prices are available from EITI Reports for some years, they are used to adjust the global prices for the other years.",
+"To improve confidence in the calculated production values, efforts have been made to find country-specific prices for commodities that have an annual production value of >US$1bn and make up >50% of the country's annual total mining production value.  Where available, these have been used to adjust the global prices (this has not been possible for the precious stone prices highlighted in red).",
+,
+,
+Conversions,
+1 British thermal unit (Btu) = 0.0357 cubic metres (m³),
+1 carat = 0.0002 kilograms (kg),
+1 cubic foot (cbf) = 0.0283168 cubic metres (m³),
+1 cubic metre (m³) = metric tons (t) from http://www.aqua-calc.com/calculate/volume-to-weight,
+1 flask = 0.035 metric tons (t),
+1 gigajoule (GJ) = 26.173 cubic metres (m³),
+1 kilogram (kg) = 32.150743126506 troy ounces (toz),
+1 metric ton (t) = 7.33 barrels (bbl) of crude oil,
+"1 metric ton (t) = 32,150.7466 troy ounces (toz)",
+1 ounce (oz) = 0.911458333 troy ounces (toz),
+1 pound (lb) = 0.453592 kilograms (kg),
+1 pound (lb) = 0.000453592 metric tons (t),
+1 short ton = 0.90718474 metric tons (t),
+"1 short ton = 29,166.6667 troy ounces (toz)",
