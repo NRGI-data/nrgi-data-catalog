@@ -73,8 +73,7 @@ def parse_eiti(filename):
                 make_row(csv_total, row, H_TOTAL)
                 seen_report_ID = row["Report ID"]
             else:
-                # Process non-total row
-                pass
+                make_row(csv_data, row, H_DATA)
 
 if __name__ == '__main__':
     parse_eiti(FILE_EITI)
