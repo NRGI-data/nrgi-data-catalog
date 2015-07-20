@@ -1,47 +1,283 @@
 {
   "name": "eiti",
-  "title": "",
+  "title": "EITI data from many countries, available as per-report data and somewhat disaggregated data per commodity",
   "homepage": "",
   "version": "0.1.0",
   "license": "PDDL-1.0",
   "resources": [
     {
+      "name": "eiti",
+      "path": "data/eiti.csv",
+      "format": "csv",
+      "mediatype": "text/csv",
+      "bytes": 482462,
+      "schema": {
+        "fields": [
+            {
+              "name": "Report ID",
+              "type": "string",
+              "description": "Year, country name combination for report"
+            },
+            {
+              "name": "Years Covered",
+              "type": "integer",
+              "description": "Year of revenue (single year)"
+            },
+            {
+              "name": "Country Name",
+              "type": "string",
+              "description": "Name of the country"
+            },
+            {
+              "name": "Lookup",
+              "type": "string",
+              "description": "Year, country name combination for lookups"
+            },
+            {
+              "name": "Region",
+              "type": "string",
+              "description": "Name of the world region"
+            },
+            {
+              "name": "Sector",
+              "type": "string",
+              "description": "Name of the sector (mining, gas, oil, other)"
+            },
+            {
+              "name": "Mining",
+              "type": "string",
+              "description": "Yes / no flag for mining"
+            },
+            {
+              "name": "Gas",
+              "type": "string",
+              "description": "Yes / no flag for gas"
+            },
+            {
+              "name": "Oil",
+              "type": "string",
+              "description": "Yes / no flag for oil"
+            },
+            {
+              "name": "Commodity",
+              "type": "string",
+              "description": "Name of the commodity"
+            },
+            {
+              "name": "Total Production Volume (external source)",
+              "type": "number",
+              "description": "Total production volume according to an external source"
+            },
+            {
+              "name": "Total Reconciled Production Volume (from EITI Report)",
+              "type": "number",
+              "description": "Total production volume according to the EITI report"
+            },
+            {
+              "name": "Total Production Volume (from EITI Report, government source)",
+              "type": "number",
+              "description": ""
+            },
+            {
+              "name": "Total Production Volume (from EITI Report, companies source)",
+              "type": "number",
+              "description": ""
+            },
+            {
+              "name": "Volume Metric",
+              "type": "string",
+              "description": "Metric for the volume amount"
+            },
+            {
+              "name": "Price",
+              "type": "number",
+              "description": "Price for production"
+            },
+            {
+              "name": "Per Unit",
+              "type": "string",
+              "description": "Unit for price of production"
+            },
+            {
+              "name": "Source for Total Production Volume & Price Information",
+              "type": "string",
+              "description": "Source information, can be multiple sources"
+            },
+            {
+              "name": "Total Production Value (US$)",
+              "type": "number",
+              "description": ""
+            },
+            {
+              "name": "Revenue Streams Covered",
+              "type": "number",
+              "description": ""
+            },
+            {
+              "name": "Includes In-kind Payments",
+              "type": "number",
+              "description": ""
+            },
+            {
+              "name": "Added to Payments by Author",
+              "type": "number",
+              "description": ""
+            },
+            {
+              "name": "Payments Received by Government from Covered Companies (US$)",
+              "type": "number",
+              "description": ""
+            },
+            {
+              "name": "Payments Made by Covered Companies (US$)",
+              "type": "number",
+              "description": ""
+            },
+            {
+              "name": "Proportion of Total Revenue/Production Covered (as indicated in EITI Report)",
+              "type": "number",
+              "description": ""
+            },
+            {
+              "name": "Total Government Extractives Revenue (US$)",
+              "type": "number",
+              "description": ""
+            },
+            {
+              "name": "Source for Total Government Extractives Revenues",
+              "type": "number",
+              "description": ""
+            },
+            {
+              "name": "Government's share",
+              "type": "number",
+              "description": ""
+            },
+            {
+              "name": "Currency",
+              "type": "number",
+              "description": ""
+            },
+            {
+              "name": "Exchange Rate Utilized, US$1:LC",
+              "type": "number",
+              "description": ""
+            },
+            {
+              "name": "Disaggregation",
+              "type": "number",
+              "description": ""
+            },
+            {
+              "name": "In-kind Payment Volumes",
+              "type": "number",
+              "description": ""
+            },
+            {
+              "name": "In-kind Payment Value (US$)",
+              "type": "number",
+              "description": ""
+            },
+            {
+              "name": "Nature of Subsidy",
+              "type": "number",
+              "description": ""
+            },
+            {
+              "name": "Amount of Subsidy (US$)",
+              "type": "number",
+              "description": ""
+            },
+            {
+              "name": "Number of Companies Requested to Report",
+              "type": "number",
+              "description": ""
+            },
+            {
+              "name": "Companies Requested to Report",
+              "type": "number",
+              "description": ""
+            },
+            {
+              "name": "Number of Reporting Companies",
+              "type": "number",
+              "description": ""
+            },
+            {
+              "name": "Publication Date",
+              "type": "number",
+              "description": ""
+            },
+            {
+              "name": "Updated Date",
+              "type": "number",
+              "description": ""
+            },
+            {
+              "name": "Name of the Reconciler",
+              "type": "number",
+              "description": ""
+            },
+            {
+              "name": "EITI Report",
+              "type": "number",
+              "description": ""
+            },
+            {
+              "name": "Page of the Report",
+              "type": "number",
+              "description": ""
+            },
+            {
+              "name": "Comments",
+              "type": "number",
+              "description": ""
+            }
+        ]
+      }
+    },
+    {
       "name": "eiti_total",
       "path": "data/eiti_total.csv",
       "format": "csv",
       "mediatype": "text/csv",
-      "bytes": 406784,
+      "bytes": 408685,
       "schema": {
         "fields": [
           {
             "name": "Report ID",
             "type": "string",
-            "description": ""
+            "description": "Year, country name combination for report"
           },
           {
             "name": "Years Covered",
-            "type": "number",
-            "description": ""
+            "type": "integer",
+            "description": "Year of revenue (single year)"
+          },
+          {
+            "name": "Country Name",
+            "type": "string",
+            "description": "Name of the country"
           },
           {
             "name": "Lookup",
             "type": "string",
-            "description": ""
+            "description": "Year, country name combination for lookups"
           },
           {
             "name": "Region",
             "type": "string",
-            "description": ""
+            "description": "Name of the world region"
           },
           {
             "name": "Country Webpage",
             "type": "string",
-            "description": ""
+            "description": "Web page for the country EITI initiative"
           },
           {
             "name": "Sector",
             "type": "string",
-            "description": ""
+            "description": "Name of the sector (mining, gas, oil, other)"
           },
           {
             "name": "Total Production Value (US$)",
