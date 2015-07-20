@@ -10,7 +10,7 @@ FILE_DATA = "../data/eiti.csv"
 FILE_TOTAL = "../data/eiti_total.csv"
 
 H_DATA = ['Report ID', 'Years Covered', 'Country Name', 'Lookup',
-'Region', 'Country Webpage', 'Sector', 'Mining', 'Gas', 'Oil', 'Commodity',
+'Region', 'Sector', 'Mining', 'Gas', 'Oil', 'Commodity',
 'Total Production Volume (external source)', 
 'Total Reconciled Production Volume (from EITI Report)', 
 'Total Production Volume (from EITI Report, government source)', 
@@ -31,7 +31,7 @@ H_DATA = ['Report ID', 'Years Covered', 'Country Name', 'Lookup',
 'Number of Reporting Companies', 'Publication Date', 'Updated Date', 
 'Name of the Reconciler', 'EITI Report', 'Page of the Report', 'Comments']
 
-H_TOTAL = ['Report ID', 'Years Covered', "Lookup", "Region",
+H_TOTAL = ['Report ID', 'Years Covered', "Country Name", "Lookup", "Region",
 "Country Webpage", "Sector", "Total Production Value (US$)", 
 "Revenue Streams Covered", "Includes In-kind Payments", 
 "Added to Payments by Author", 
