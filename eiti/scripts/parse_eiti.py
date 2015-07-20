@@ -82,6 +82,7 @@ def parse_eiti(filename):
         known_data = []
         
         for i, row in enumerate(csvf):
+            if row["Report ID"] == "": continue
             if row["Report ID"] != seen_report_ID:
                 # Process total row
                 make_row(csv_total, row, H_TOTAL)
