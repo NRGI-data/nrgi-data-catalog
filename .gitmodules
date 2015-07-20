@@ -34,3 +34,6 @@
 [submodule "imf-weo"]
 	path = imf-weo
 	url = https://github.com/NRGI-data/imf-weo
+[submodule "gheiti"]
+	path = gheiti
+	url = https://github.com/NRGI/eiti-parser
