@@ -47,9 +47,20 @@ H_TOTAL = ['Report ID', 'Years Covered', "Country Name", "Lookup", "Region",
 'Number of Reporting Companies', 'Publication Date', 'Updated Date', 
 'Name of the Reconciler', 'EITI Report', 'Page of the Report', 'Comments']
 
+data_transforms = {
+    'Years Covered': 'int',
+}
+
+def transform(k, v):
+    if data_transforms[k] == "int":
+        return int(float(v))
+    return v
+
 def make_row(csv_file, row, headers):
-    for k, v in row.items():     
+    for k, v in row.items():
         if k not in headers: row.pop(k)
+        if k in data_transforms:
+            row[k] = transform(k, v)
     csv_file.writerow(row)
 
 def parse_eiti(filename):
