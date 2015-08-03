@@ -1,4 +1,4 @@
 cofog: "" -> NULL
-corruption-perception-index: NA -> NULL, melt, country codes
-country-codes - DEAL WITH NUMBER STRINGS
+corruption-perception-index: NA -> NULL
+country-codes - PostGres does not like numbers as strings, cannot update
 cpi
