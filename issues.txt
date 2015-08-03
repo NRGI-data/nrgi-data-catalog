@@ -1,0 +1,4 @@
+cofog: "" -> NULL
+corruption-perception-index: NA -> NULL, melt, country codes
+country-codes - DEAL WITH NUMBER STRINGS
+cpi

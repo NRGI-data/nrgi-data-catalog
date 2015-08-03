@@ -1,4 +1,0 @@
-cofog - DEAL WITH ""
-corruption-perception-index - DEAL WITH NA
-country-codes - DEAL WITH NUMBER STRINGS
-cpi
