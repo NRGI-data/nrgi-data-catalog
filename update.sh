@@ -28,8 +28,14 @@ mkdir tmp
 # # # pip install -r ./cpi/scripts/requirements.txt
 # # # python ./cpi/scripts/cpi2datapackage.py -o ./cpi/data
 
-# finance-vix
-bash ./finance-vix/scripts/process.sh
+# # finance-vix
+# cd finance-vix && bash ./scripts/process.sh
+
+# # Gold prices
+# python ./gold-prices/scripts/process.py -o ./gold-prices
+
+# IMF weo
+python ./imf-weo/scripts/process.py -o ./imf-weo
 
 
 rm -r ./tmp
