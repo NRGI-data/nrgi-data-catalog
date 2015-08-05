@@ -1,4 +1,4 @@
 cofog: "" -> NULL
-corruption-perception-index: NA -> NULL
-country-codes - PostGres does not like numbers as strings, cannot update
-cpi
+corruption-perception-index: NA -> NULL, add iso3
+country-codes - PostGres does not like numbers as strings, " " -> NULL, cannot update
+cpi -> add iso2

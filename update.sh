@@ -22,9 +22,14 @@ mkdir tmp
 
 # # corruption perceptions index
 # R < ./corruption-perceptions-index/scripts/script.R --no-save
- 
-# country codes
-pip install -r ./country-codes/scripts/requirements.txt
+
+# May way to destroy
+# # # # cpi
+# # # pip install -r ./cpi/scripts/requirements.txt
+# # # python ./cpi/scripts/cpi2datapackage.py -o ./cpi/data
+
+# finance-vix
+bash ./finance-vix/scripts/process.sh
+
 
 rm -r ./tmp
-
