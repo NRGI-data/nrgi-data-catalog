@@ -1,7 +1,7 @@
 cofog: "" -> NULL
 corruption-perception-index: NA -> NULL, add iso3
 country-codes - PostGres does not like numbers as strings, " " -> NULL, cannot update
-imf-weo -> wide format?, commas and quotes in anything over 1000, projection years
+imf-weo -> wide format?, commas and quotes in anything over 1000, projection years, separate variables
 language-codes: "" -> NULL
 
 cpi, gdp, population, and ppp are all on wb api

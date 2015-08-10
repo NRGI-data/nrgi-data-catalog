@@ -1,0 +1,67 @@
+
+import os
+import requests
+import logging
+import csv
+import shutil
+
+logger = logging.getLogger()
+logging.basicConfig(level=logging.INFO)
+
+# Default source url
+source_url = ''
+
+# Download function
+def download():
+    """
+    
+    """
+	logger.info('Retrieving source data: %s ...' % source_url)
+	if not os.path.exists(args.filepath + '/cache'):
+		os.makedirs(args.filepath + '/cache')
+
+	r = requests.get(args.source_url, stream=True)
+
+	with open(local_filename, 'wb') as fp:
+		for chunk in r.iter_content(chunk_size=1024): 
+			if chunk: # filter out keep-alive new chunks
+				fp.write(chunk)
+				fp.flush()
+	# return
+	logger.info('Source data downloaded to: %s' % fp)
+
+def transform():
+    """
+    
+    """
+	logger.info('Starting transfromation process of data from: %s' % local_filename)
+
+
+	logger.info('Completed data transformation to data/ directory')
+	shutil.rmtree(args.filepath + '/cache')
+
+
+
+if __name__ == '__main__':
+    logging.basicConfig(level=logging.DEBUG)
+    import argparse
+    # Description of parcer
+    parser = argparse.ArgumentParser(
+    	description='')
+
+    # Output file option
+    parser.add_argument('-o', '--output', dest='filepath', action='store',
+    	default=None, metavar='filepath',
+    	help='define output filepath')
+
+    # Source file option (default is the global source_url)
+    parser.add_argument('-s', '--source', dest='source_url', action='store',
+    	default=source_url, metavar='source_url',
+    	help='source file to generate output from')
+
+    # Parse the arguments into args
+    args = parser.parse_args()
+
+    local_filename = args.filepath + '/cache/' + args.source_url.split('/')[-1]
+    download()
+    transform()

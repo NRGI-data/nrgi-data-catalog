@@ -14,6 +14,11 @@ mkdir tmp
 # R CMD install ./tmp/countrycode_0.18.tar.gz
 # R CMD install ./tmp/reshape2_1.4.1.tar.gz
 
+# May way to destroy
+# # # # cpi
+# # # pip install -r ./cpi/scripts/requirements.txt
+# # # python ./cpi/scripts/process.py -o ./cpi/data
+
 # # cofog
 # pip install -r ./cofog/scripts/requirements.txt
 # python ./cofog/scripts/process.py retrieve
@@ -21,12 +26,7 @@ mkdir tmp
 # python ./cofog/scripts/process.py export_to_rdf
 
 # # corruption perceptions index
-# R < ./corruption-perceptions-index/scripts/script.R --no-save
-
-# May way to destroy
-# # # # cpi
-# # # pip install -r ./cpi/scripts/requirements.txt
-# # # python ./cpi/scripts/cpi2datapackage.py -o ./cpi/data
+# R < ./corruption-perceptions-index/scripts/process.R --no-save
 
 # # finance-vix
 # cd finance-vix && bash ./scripts/process.sh
@@ -34,8 +34,11 @@ mkdir tmp
 # # Gold prices
 # python ./gold-prices/scripts/process.py -o ./gold-prices
 
-# IMF weo
-python ./imf-weo/scripts/process.py -o ./imf-weo
+# # IMF weo
+# python ./imf-weo/scripts/process.py -o ./imf-weo
 
+# ICTD
+# pip install -r ./ictd/scripts/requirements.txt
+# python ./ictd/scripts/process.py -o ./ictd
 
 rm -r ./tmp

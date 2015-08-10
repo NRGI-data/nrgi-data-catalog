@@ -1,1 +1,0 @@
-# nrgi-data-catalog
