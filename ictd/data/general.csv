@@ -1,4 +1,4 @@
-ISO,Calendar year (nearest),Source,Problem 1: Data Not Credible,Problem 3: Data is of Questionable Analytical Comparability,Revenue including social contributions,Revenue excluding social contributions,Revenue excluding Grants (including social contributions),Revenue excluding grants and social contributions,Total Resource Revenue,Resource taxes,"Resource Component of Taxes on income, profits, and capital gains",Resource Component of Indirect,Resources Component of Non-Tax
+iso2c,year,source,not_credible,not_comparable,rev_inc_soc_contr,rev_ex_soc_contr,rev_ex_grants_inc_soc_contr,rev_ex_grants_ex_soc_contr,tot_resource_rev,resource_taxes,resource_comp_tax_income,resource_comp_indirect,resourc_comp_non_tax
 AF,2006,GFS,False,False,0.296665701602007,0.295651390260795,0.091835893593106,0.0908215822518932,NULL,0.0,0.0,0.0,NULL
 AF,2007,GFS,False,False,0.359507404313139,0.358592836223754,0.0809392873865024,0.0800247192971182,NULL,0.0,0.0,0.0,NULL
 AF,2008,GFS,False,False,0.301973114510742,0.300563650608597,0.0809528004468419,0.0795433365446973,NULL,0.0,0.0,0.0,NULL

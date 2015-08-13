@@ -37,8 +37,12 @@ mkdir tmp
 # # IMF weo
 # python ./imf-weo/scripts/process.py -o ./imf-weo
 
-# ICTD
+# # ICTD
 # pip install -r ./ictd/scripts/requirements.txt
 # python ./ictd/scripts/process.py -o ./ictd
+
+# # country-codes
+# pip install -r ./country-codes/scripts/requirements.txt
+# python ./country-codes/scripts/process.py -o ./country-codes
 
 rm -r ./tmp

@@ -2,7 +2,6 @@
 import os
 import requests
 import logging
-import sys
 from pyexcel_ods import get_data
 import json
 import csv
@@ -116,6 +115,22 @@ def transform():
         'Resource Component of Indirect',
         'Resources Component of Non-Tax'
     ]
+    data_header = [
+        'iso2c',
+        'year',
+        'source',
+        'not_credible',
+        'not_comparable',
+        'rev_inc_soc_contr',
+        'rev_ex_soc_contr',
+        'rev_ex_grants_inc_soc_contr',
+        'rev_ex_grants_ex_soc_contr',
+        'tot_resource_rev',
+        'resource_taxes',
+        'resource_comp_tax_income',
+        'resource_comp_indirect',
+        'resourc_comp_non_tax'
+    ]
 
     lkey = {'central': {}, 'general': {}, 'merged': {}}
 
@@ -200,7 +215,7 @@ def transform():
                 
                 out_data[df].append(add_array)
         logger.info('Writing ' + df + '.csv file to data/ directory')
-        write_csv(var_list, out_data[df], df)
+        write_csv(data_header, out_data[df], df)
         elapsed_time = time.time() - start_time
         logger.info('Finished writing %s.csv file to data/ directory (elapsed time - %d seconds)' % (df, elapsed_time))
 
@@ -214,6 +229,8 @@ def transform():
 
     #### VAR_LIST
     var_list_header = in_data['var_list'][1]
+    for h in var_list_header:
+        h = h.lower()
     var_list_array = []
 
     for row in range(2, len(in_data['var_list'])):
