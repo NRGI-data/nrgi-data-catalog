@@ -24,6 +24,7 @@ mkdir tmp
 # python ./cofog/scripts/process.py retrieve
 # python ./cofog/scripts/process.py export_to_csv
 # python ./cofog/scripts/process.py export_to_rdf
+# rm -r ./cache
 
 # # corruption perceptions index
 # R < ./corruption-perceptions-index/scripts/process.R --no-save
@@ -35,6 +36,7 @@ mkdir tmp
 # python ./gold-prices/scripts/process.py -o ./gold-prices
 
 # # IMF weo
+# pip install -r ./imf-weo/scripts/requirements.txt
 # python ./imf-weo/scripts/process.py -o ./imf-weo
 
 # # ICTD
@@ -44,5 +46,9 @@ mkdir tmp
 # # country-codes
 # pip install -r ./country-codes/scripts/requirements.txt
 # python ./country-codes/scripts/process.py -o ./country-codes
+
+# # language-codes
+# pip install -r ./language-codes/scripts/requirements.txt
+# python ./language-codes/scripts/process.py -o ./language-codes
 
 rm -r ./tmp

@@ -1,9 +1,6 @@
---one time--
-country-codes - PostGres does not like numbers as strings, " " -> NULL, cannot update
-language-codes: "" -> NULL
 
 --ongiong--
-cofog: "" -> NULL
+cofog: "" -> NULL, mdb tools not available in osx, complex
 corruption-perception-index: NA -> NULL, add iso3
 imf-weo -> wide format?, commas and quotes in anything over 1000, projection years, separate variables
 
